@@ -3,3 +3,12 @@
     font-size: 28px;
     font-family: Helvetica, "Times New Roman", sans-serif;
 }
+
+.first-element {
+    background-color: #000000;
+    color: hsl(0, 0%, 100%);
+}
+
+.second-element {
+    background-color: rgb(240, 255, 0);
+}
