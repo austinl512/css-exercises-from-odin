@@ -6,15 +6,19 @@ body {
 .one {
   background: pink;
   border: 3px solid blue;
-  /* CHANGE ME */
+
+  /* Div one will have 32px between their text and border. */
   padding: 32px;
+
+  /* Div one will have 12px between it and any other element on the page. */
   margin: 12px;
 }
 
 .two {
   background: lightblue;
   border: 3px solid purple;
-  /* CHANGE ME */
+  
+  /* There will be a 48px gap between Div two and Div three */
   margin-bottom: 48px;
 }
 
@@ -22,7 +26,10 @@ body {
   background: peachpuff;
   border: 3px solid brown;
   width: 200px;
-  /* CHANGE ME */
+
+  /* Div three will have 32px between their text and border. */
   padding: 32px;
+
+  /* Div three will be aligned to the right. */
   margin-left: auto;
 }
