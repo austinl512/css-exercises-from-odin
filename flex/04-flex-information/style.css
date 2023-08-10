@@ -1,5 +1,8 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+
+  /* This centers all the text on the page. */
+  text-align: center;
 }
 
 img {
@@ -10,6 +13,23 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+
+  /* This centers the title on the main axis and separates it from the items by 32px. */
+  display: flex;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+/* This class selector centers all of the items on the main axis and spaces each item by 52px. */
+.grouped-items {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+/* This class selector sets the size of each item to be at most 200px in width and makes it so that the text wraps. */
+.items {
+  max-width: 200px;
 }
 
 /* do not edit this footer */
