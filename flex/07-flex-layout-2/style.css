@@ -2,6 +2,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+
+  /* The following lines vertically stack the header, container, and footer on top one another (footer will be pushed to the bottom). */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,7 +13,8 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
-  border: 5px solid red;
+
+  /* The following lines set the header font size and weight. They also vertically center the header and place it 16px from the edge of the screen. */
   font-size: 32px;
   font-weight: 900;
   display: flex;
@@ -23,8 +26,9 @@ body {
 .footer {
   height: 72px;
   background: #eee;
+
+  /* The following lines center the footer horizontally and vertically. */
   color: darkmagenta;
-  border: 5px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,45 +38,51 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
-  border: 5px solid red;
+
+  /* The following lines set the sidebar padding and prevent the sidebar from shrinking. */
   display: flex;
   flex-shrink: 0;
   padding: 16px;
 }
 
+/* This type selector removes default margin/padding and removes the list bullet points. */
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  border: 5px solid green;
 }
 
+/* This type selector removes the link underlines and sets the font color as well as the font size. */
 a {
   text-decoration: none;
   font-size: 24px;
   color: white;
-  border: 5px solid red;
 }
 
+/* This type selector spaces out the links vertically. */
 li {
   margin-bottom: 16px;
 }
 
+/* This class selector adds the required padding to the card section (container) and allows the cards to wrap as the screen gets smaller. */
 .card-section {
   display: flex;
   padding: 32px;
   flex-wrap: wrap;
 }
+
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  border: 5px solid red;
+
+  /* The following lines set the width of the cards so that flex-wrap works as intended. Additionally, the padding and margins of the cards are set. */
   width: 350px;
   padding: 15px;
   margin: 20px;
 }
 
+/* This class selector align the sidebar and card section with each other horizontally. */
 .container {
   display: flex;
   flex: 1;
