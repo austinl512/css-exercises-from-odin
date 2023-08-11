@@ -5,14 +5,16 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  
+  /* The following lines appropriately spaces the header, content, and footer vertically on the page. */
   display: flex;
   flex-direction: column;
-  border: 5px solid red;
   justify-content: space-between;
 }
 
 img {
   width: 600px;
+  /* I added some padding to the logo. */
   padding: 10px;
 }
 
@@ -33,36 +35,40 @@ input {
   margin-bottom: 16px;
 }
 
+/* This type selector removes the list bullet points for the header and footer. */
 ul {
   list-style-type: none;
 }
 
+/* This type selector removes the underline and blue color from the left and right links. */
 a {
   text-decoration: none;
   color: black;
   font-weight: 500;
 }
 
+/* This class selector appropriately spaces the left links from the right links in the header and footer. */
 .header, .footer {
   display: flex;
-  border: 5px solid red;
   justify-content: space-between;
   padding: 5px 10px;
   font-size: 17px;
 }
 
+/* This class selector add the required background color to the footer. */
 .footer {
   background-color: #eeeeee;
 }
 
+/* The following class selector appropraitely aligns and spaces the links within the header and footer. */
 .left-links, .right-links {
   display: flex;
   padding: 8px;
   gap: 16px;
 }
 
+/* The following class selector displays the logo, input, and buttons in the center of the page and stacks the elements vertically. */
 .content {
-  border: 5px solid red;
   display: flex;
   flex-direction: column;
   flex: 1;
