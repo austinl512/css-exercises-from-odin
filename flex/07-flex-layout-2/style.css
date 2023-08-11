@@ -35,8 +35,33 @@ body {
   background: royalblue;
   box-sizing: border-box;
   border: 5px solid red;
+  display: flex;
+  flex-shrink: 0;
+  padding: 16px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: 5px solid green;
+}
+
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  border: 5px solid red;
+}
+
+li {
+  padding-bottom: 16px;
+}
+
+.card-section {
+  display: flex;
+  padding: 32px;
+}
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
